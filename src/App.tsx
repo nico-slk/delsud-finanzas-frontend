@@ -17,10 +17,9 @@ function App() {
       <button onClick={auth.logout}>Cerrar sesion</button>
       <div className="card">
         <ul>
-          <li><Link to="/intereses">Intereses</Link></li>
-          <li><Link to="/print">Print</Link></li>
-          <li><Link to="/calcular-distancia-wt">Calcular Distancia WT</Link></li>
-          <li><Link to="/contador-letras">Contador Letras</Link></li>
+          <li><Link to="/">Dashboard</Link></li>
+          <li><Link to="/gastos">Gastos</Link></li>
+          <li><Link to="/ventas">Ventas</Link></li>
         </ul>
         <Outlet />
       </div>

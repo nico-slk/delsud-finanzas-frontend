@@ -11,6 +11,9 @@ import Register from './pages/auth/Register.tsx';
 
 import { Navigate } from "react-router-dom";
 import { useAuth } from './hooks/useAuth.ts';
+import Dashboard from './pages/dashboard/Dashboard.tsx';
+import Gastos from './pages/gastos/Gastos.tsx';
+import Ventas from './pages/ventas/Ventas.tsx';
 
 export const PrivateRoute = () => {
   const { token } = useAuth();
@@ -31,10 +34,9 @@ const router = createBrowserRouter([
         path: "/",
         element: <App />,
         children: [
-          { path: "intereses", element: <p>Sarasa</p> },
-          { path: "print", element: <p>Sarasa</p> },
-          { path: "calcular-distancia-wt", element: <p>Sarasa</p> },
-          { path: "contador-letras", element: <p>Sarasa</p> },
+          { path: "/", element: <Dashboard /> },
+          { path: "gastos", element: <Gastos /> },
+          { path: "ventas", element: <Ventas /> },
         ]
       }
     ]
