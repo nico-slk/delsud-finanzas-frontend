@@ -1,6 +1,6 @@
 const API_URL = "http://localhost:3001/api";
 
-export type FiltroType = "hoy" | "semana" | "mes" | "anio" | "";
+export type FiltroType = "dia" | "semana" | "mes" | "anio" | "";
 
 export class VentasService {
   static async getVentas(filtro: FiltroType) {
